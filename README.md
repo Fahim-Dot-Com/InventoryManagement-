@@ -9,7 +9,7 @@ This SQL project models a basic inventory system used by small businesses or eCo
 - `sales` – Records quantity and sale info
 
 ## Example 📷 
-```
+```sql
 SELECT p.name, SUM(s.quantity * p.price) AS total_revenue
 FROM sales s
 JOIN products p ON s.product_id = p.product_id
